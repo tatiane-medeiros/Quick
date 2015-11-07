@@ -8,7 +8,11 @@ Window {
     visible: true
 
     Rectangle {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> origin/master
         width: parent.width
         height: parent.height
         id: first
