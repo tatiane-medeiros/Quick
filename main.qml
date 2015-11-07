@@ -6,15 +6,9 @@ Window {
     width: 400
     height: 400
     visible: true
-//    MainForm {
-//        anchors.fill: parent
-
-
-//    }
-
 
     Rectangle {
-        //property alias mouseArea: mouseArea
+        
         width: parent.width
         height: parent.height
         id: first
