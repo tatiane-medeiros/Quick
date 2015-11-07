@@ -6,15 +6,9 @@ Window {
     width: 400
     height: 400
     visible: true
-//    MainForm {
-//        anchors.fill: parent
-
-
-//    }
-
 
     Rectangle {
-        //property alias mouseArea: mouseArea
+
         width: parent.width
         height: parent.height
         id: first
@@ -43,6 +37,24 @@ Window {
                 color: "#ff00f0"
                 anchors.left: third.right
                 y: parent.y * 1.2
+                Text{
+                       id: helloText
+                       visible: false
+                       text: "Hello world!"
+                       y: parent.y
+                       anchors.horizontalCenter: parent.horizontalCenter
+                       color: "white"
+                       font.pointSize: 12; font.bold: true
+                   }
+                MouseArea{
+                    id: press
+                    width: parent.width; height: parent.height
+                    onClicked:{
+                        if(helloText.visible == false)  helloText.visible = true;
+                        else helloText.visible = false;
+
+                    }
+                }
             }
             Rectangle{
                 id: fifth
