@@ -63,6 +63,16 @@ Window {
                 color: "#ffff00"
                 anchors.top: third.bottom
                 x: parent.x * 1.2
+
+                MouseArea{
+                    id: press2
+                    width: parent.width; height: parent.height
+                    onClicked:{
+                        if(parent.color == Qt.rgba(255,255,0,1))  parent.color = "red";
+                        else parent.color = "yellow";
+
+                    }
+                }
             }
         }
 
